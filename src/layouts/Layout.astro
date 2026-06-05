@@ -17,6 +17,15 @@ const { title, description = 'Vega Financial' } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title} | Vega Financial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --vega-navy: #1a365d;
+        --vega-gold: #d4a574;
+        --vega-light: #f7f3ef;
+        --vega-dark: #2d2d2d;
+      }
+    </style>
   </head>
   <body class="bg-white text-vega-dark">
     <Navigation />
@@ -26,14 +35,3 @@ const { title, description = 'Vega Financial' } = Astro.props;
     <Footer />
   </body>
 </html>
-
-<style is:global>
-  @import 'tailwindcss/base';
-  @import 'tailwindcss/components';
-  @import 'tailwindcss/utilities';
-
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, sans-serif;
-  }
-</style>
