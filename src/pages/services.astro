@@ -2,54 +2,97 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Services" description="Explore our comprehensive financial services">
-  <section class="py-20">
+<Layout title="Services" description="Comprehensive financial services for wealth creation and security">
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-vega-navy to-blue-900 text-white py-20">
     <div class="max-w-6xl mx-auto px-4">
-      <h1 class="text-5xl font-bold text-vega-navy mb-12 text-center">Our Services</h1>
+      <h1 class="text-5xl font-bold mb-4">Our Services</h1>
+      <p class="text-xl text-blue-100">Comprehensive solutions for every stage of your financial journey</p>
+    </div>
+  </section>
 
-      <div class="space-y-12">
-        <div class="border-l-4 border-vega-gold pl-8">
-          <h2 class="text-3xl font-bold text-vega-navy mb-3">Financial Planning</h2>
-          <p class="text-gray-600 mb-3">
-            We develop comprehensive financial plans that align with your life goals. Our advisors work with you to create a roadmap for financial success.
+  <!-- Services -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="space-y-16">
+        <div class="border-l-4 border-blue-400 pl-8">
+          <h2 class="text-3xl font-bold text-vega-navy mb-4">Financial Planning</h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Our comprehensive financial planning process helps you align your finances with your life goals. We analyze your complete financial picture and create a detailed roadmap for success.
           </p>
-          <ul class="space-y-2 text-gray-600 list-disc list-inside">
-            <li>Retirement planning and analysis</li>
-            <li>Estate planning strategies</li>
-            <li>Tax optimization</li>
-            <li>Risk management and insurance review</li>
-          </ul>
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-bold text-vega-navy mb-2">Planning Services</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Retirement planning and projections</li>
+                <li>• Estate planning strategies</li>
+                <li>• Tax optimization</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-bold text-vega-navy mb-2">Risk Management</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Insurance needs analysis</li>
+                <li>• Portfolio risk assessment</li>
+                <li>• Business succession planning</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="border-l-4 border-vega-gold pl-8">
-          <h2 class="text-3xl font-bold text-vega-navy mb-3">Investment Management</h2>
-          <p class="text-gray-600 mb-3">
-            Our investment strategies are designed to help you build and grow wealth over time. We tailor portfolios to match your risk tolerance and objectives.
+        <div class="border-l-4 border-blue-400 pl-8">
+          <h2 class="text-3xl font-bold text-vega-navy mb-4">Investment Management</h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            We build tailored investment strategies designed to help you achieve your financial goals. Our approach combines expert analysis with disciplined portfolio management.
           </p>
-          <ul class="space-y-2 text-gray-600 list-disc list-inside">
-            <li>Portfolio construction and rebalancing</li>
-            <li>Diversification strategies</li>
-            <li>Performance monitoring and reporting</li>
-            <li>Alternative investment opportunities</li>
-          </ul>
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-bold text-vega-navy mb-2">Portfolio Services</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Custom portfolio construction</li>
+                <li>• Ongoing rebalancing</li>
+                <li>• Performance monitoring</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-bold text-vega-navy mb-2">Investment Strategies</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Diversification strategies</li>
+                <li>• Tax-efficient investing</li>
+                <li>• Alternative investments</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="border-l-4 border-vega-gold pl-8">
-          <h2 class="text-3xl font-bold text-vega-navy mb-3">Retirement Planning</h2>
-          <p class="text-gray-600 mb-3">
-            Planning for retirement requires careful analysis and strategic thinking. We help ensure you have the financial resources for a comfortable retirement.
+        <div class="border-l-4 border-blue-400 pl-8">
+          <h2 class="text-3xl font-bold text-vega-navy mb-4">Retirement Planning</h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            We help you plan for the retirement you deserve. Our retirement planning services ensure you have the financial resources and strategies needed for a secure future.
           </p>
-          <ul class="space-y-2 text-gray-600 list-disc list-inside">
-            <li>Retirement income projections</li>
-            <li>Social Security optimization</li>
-            <li>Healthcare and long-term care planning</li>
-            <li>Distribution strategies</li>
-          </ul>
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-bold text-vega-navy mb-2">Planning Tools</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Retirement income projections</li>
+                <li>• Social Security optimization</li>
+                <li>• Healthcare cost planning</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-bold text-vega-navy mb-2">Implementation</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Account distribution strategies</li>
+                <li>• Tax-efficient withdrawals</li>
+                <li>• Long-term care planning</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="mt-12 text-center">
-        <a href="/contact/" class="bg-vega-gold text-vega-navy px-8 py-3 rounded font-bold hover:opacity-90 transition">
+      <div class="mt-20 text-center">
+        <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="inline-block bg-vega-navy text-white px-8 py-3 rounded font-bold hover:bg-blue-900 transition">
           Schedule a Consultation
         </a>
       </div>
