@@ -1,6 +1,7 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 
 interface Props {
   title: string;
@@ -17,21 +18,8 @@ const { title, description = 'Vega Financial' } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title} | Vega Financial</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3/tailwind.min.css" rel="stylesheet">
-    <style>
-      :root {
-        --vega-navy: #1a365d;
-        --vega-blue: #1e40af;
-        --vega-light: #f7f3ef;
-      }
-      .bg-vega-navy { background-color: #1a365d !important; }
-      .text-vega-navy { color: #1a365d !important; }
-      .bg-blue-900 { background-color: #1e3a8a !important; }
-      .text-blue-100 { color: #dbeafe !important; }
-      .bg-vega-light { background-color: #f7f3ef !important; }
-    </style>
   </head>
-  <body class="bg-white" style="color: #2d2d2d;">
+  <body>
     <Navigation />
     <main>
       <slot />
