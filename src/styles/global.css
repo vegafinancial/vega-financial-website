@@ -152,12 +152,15 @@ body {
   padding: 2.5rem;
   background-color: #faf8f5;
   border-radius: 0.5rem;
-  transition: box-shadow 0.3s ease;
+  transition: all 0.4s ease;
   border-top: 4px solid var(--vega-navy);
 }
 
 .card:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #faf8f5 0%, #f5f0e8 100%);
+  border-top-color: #06b6d4;
 }
 
 .card h3 {
@@ -264,6 +267,15 @@ nav a {
   font-weight: 500;
   color: var(--vega-navy);
   line-height: 1.5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.solution-item:hover {
+  background: linear-gradient(90deg, #eef2f5 0%, #e8ecf0 100%);
+  border-left-color: #06b6d4;
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .icon-cards-grid {
