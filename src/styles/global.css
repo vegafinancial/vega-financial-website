@@ -1,3 +1,45 @@
+:root {
+  --vega-navy: #1a365d;
+  --vega-gold: #d4a574;
+  --vega-light: #f7f3ef;
+  --vega-dark: #2d2d2d;
+}
+
+.bg-gradient-to-b {
+  background: linear-gradient(to bottom, #0f1e3a, #1a365d, #0f1e3a) !important;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #0f1e3a, #1a365d) !important;
+}
+
+.btn-primary {
+  background-color: #06b6d4 !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #22d3ee !important;
+}
+
+.btn-secondary {
+  background-color: var(--vega-navy) !important;
+  color: white !important;
+}
+
+.card {
+  background-color: #faf8f5 !important;
+  border-top: 4px solid var(--vega-navy) !important;
+}
+
+.icon-card {
+  background-color: #f0f1f3 !important;
+}
+
+.solution-item {
+  background-color: #f5f6f7 !important;
+}
+
 /* Badges */
 .badge {
   display: inline-block;
