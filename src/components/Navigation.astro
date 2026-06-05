@@ -1,0 +1,37 @@
+---
+const currentPath = new URL(Astro.request.url).pathname;
+
+const navItems = [
+  { label: 'Home', path: '/' },
+  { label: 'About', path: '/about/' },
+  { label: 'Services', path: '/services/' },
+  { label: 'Engagement', path: '/engagement/' },
+  { label: 'Contact', path: '/contact/' },
+];
+---
+
+<nav class="bg-vega-navy text-white">
+  <div class="max-w-6xl mx-auto px-4 py-4">
+    <div class="flex justify-between items-center">
+      <div class="text-2xl font-bold text-vega-gold">Vega Financial</div>
+      <ul class="flex gap-6">
+        {
+          navItems.map((item) => (
+            <li>
+              <a
+                href={item.path}
+                class={`py-2 px-3 rounded transition ${
+                  currentPath === item.path
+                    ? 'bg-vega-gold text-vega-navy'
+                    : 'hover:text-vega-gold'
+                }`}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</nav>
