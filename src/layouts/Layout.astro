@@ -17,30 +17,21 @@ const { title, description = 'Vega Financial' } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title} | Vega Financial</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3/tailwind.min.css" rel="stylesheet">
     <style>
       :root {
-        --color-vega-navy: #1a365d;
-        --color-vega-gold: #d4a574;
-        --color-vega-light: #f7f3ef;
-        --color-vega-dark: #2d2d2d;
+        --vega-navy: #1a365d;
+        --vega-blue: #1e40af;
+        --vega-light: #f7f3ef;
       }
-
-      .bg-vega-navy { background-color: var(--color-vega-navy); }
-      .bg-vega-gold { background-color: var(--color-vega-gold); }
-      .bg-vega-light { background-color: var(--color-vega-light); }
-      .bg-vega-dark { background-color: var(--color-vega-dark); }
-      
-      .text-vega-navy { color: var(--color-vega-navy); }
-      .text-vega-gold { color: var(--color-vega-gold); }
-      .text-vega-light { color: var(--color-vega-light); }
-      .text-vega-dark { color: var(--color-vega-dark); }
-
-      .border-vega-navy { border-color: var(--color-vega-navy); }
-      .border-vega-gold { border-color: var(--color-vega-gold); }
+      .bg-vega-navy { background-color: #1a365d !important; }
+      .text-vega-navy { color: #1a365d !important; }
+      .bg-blue-900 { background-color: #1e3a8a !important; }
+      .text-blue-100 { color: #dbeafe !important; }
+      .bg-vega-light { background-color: #f7f3ef !important; }
     </style>
   </head>
-  <body class="bg-white text-vega-dark">
+  <body class="bg-white" style="color: #2d2d2d;">
     <Navigation />
     <main>
       <slot />
