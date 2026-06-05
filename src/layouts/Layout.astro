@@ -20,11 +20,24 @@ const { title, description = 'Vega Financial' } = Astro.props;
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       :root {
-        --vega-navy: #1a365d;
-        --vega-gold: #d4a574;
-        --vega-light: #f7f3ef;
-        --vega-dark: #2d2d2d;
+        --color-vega-navy: #1a365d;
+        --color-vega-gold: #d4a574;
+        --color-vega-light: #f7f3ef;
+        --color-vega-dark: #2d2d2d;
       }
+
+      .bg-vega-navy { background-color: var(--color-vega-navy); }
+      .bg-vega-gold { background-color: var(--color-vega-gold); }
+      .bg-vega-light { background-color: var(--color-vega-light); }
+      .bg-vega-dark { background-color: var(--color-vega-dark); }
+      
+      .text-vega-navy { color: var(--color-vega-navy); }
+      .text-vega-gold { color: var(--color-vega-gold); }
+      .text-vega-light { color: var(--color-vega-light); }
+      .text-vega-dark { color: var(--color-vega-dark); }
+
+      .border-vega-navy { border-color: var(--color-vega-navy); }
+      .border-vega-gold { border-color: var(--color-vega-gold); }
     </style>
   </head>
   <body class="bg-white text-vega-dark">
