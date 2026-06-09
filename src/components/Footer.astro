@@ -2,30 +2,106 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-vega-dark text-white mt-16">
-  <div class="max-w-6xl mx-auto px-4 py-8">
-    <div class="grid grid-cols-3 gap-8 mb-8">
-      <div>
-        <h3 class="text-vega-gold font-bold mb-4">Vega Financial</h3>
-        <p class="text-gray-300">Professional financial advisory services.</p>
-      </div>
-      <div>
-        <h4 class="text-vega-gold font-bold mb-4">Quick Links</h4>
-        <ul class="space-y-2 text-gray-300">
-          <li><a href="/" class="hover:text-vega-gold transition">Home</a></li>
-          <li><a href="/about/" class="hover:text-vega-gold transition">About</a></li>
-          <li><a href="/services/" class="hover:text-vega-gold transition">Services</a></li>
-          <li><a href="/contact/" class="hover:text-vega-gold transition">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-vega-gold font-bold mb-4">Contact</h4>
-        <p class="text-gray-300">Email: hello@vegafinancial.com</p>
-        <p class="text-gray-300">Phone: (555) 123-4567</p>
+<footer class="site-footer">
+  <div class="footer-inner footer-top">
+    <!-- Brand + socials -->
+    <div class="footer-brand">
+      <a href="/" class="footer-logo" aria-label="Vega Financial — home">
+        <img src="/logos/logo_white.svg" alt="Vega Financial" width="80" height="26" />
+      </a>
+      <p class="footer-tagline">Dream Big, Love Life, Vega</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8v8.44C19.61 23.08 24 18.09 24 12.07z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.98c-3.15 0-3.52.01-4.76.07-.97.04-1.5.21-1.85.34-.46.18-.8.4-1.15.74-.34.35-.56.69-.74 1.15-.13.35-.3.88-.34 1.85-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.97.21 1.5.34 1.85.18.46.4.8.74 1.15.35.34.69.56 1.15.74.35.13.88.3 1.85.34 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.97-.04 1.5-.21 1.85-.34.46-.18.8-.4 1.15-.74.34-.35.56-.69.74-1.15.13-.35.3-.88.34-1.85.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.97-.21-1.5-.34-1.85-.18-.46-.4-.8-.74-1.15-.35-.34-.69-.56-1.15-.74-.35-.13-.88-.3-1.85-.34-1.24-.06-1.61-.07-4.76-.07zm0 3.38a4.48 4.48 0 110 8.96 4.48 4.48 0 010-8.96zm0 7.39a2.91 2.91 0 100-5.82 2.91 2.91 0 000 5.82zm5.7-7.61a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="https://x.com/" aria-label="X" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.82-5.97 6.82H1.66l7.73-8.84L1.24 2.25h6.83l4.71 6.23 5.46-6.23zm-1.16 17.52h1.83L7.01 4.13H5.05l12.03 15.64z"/></svg>
+        </a>
       </div>
     </div>
-    <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
-      <p>&copy; {currentYear} Vega Financial. All rights reserved.</p>
+
+    <!-- Company -->
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/engagement/">Engagement</a></li>
+      </ul>
     </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:tyson@vega-financial.com">tyson@vega-financial.com</a></li>
+        <li><a href="tel:+12068838342">(206) 883-8342</a></li>
+        <li class="footer-address">Mercer Island Office<br />P.O. Box 158</li>
+      </ul>
+    </div>
+
+    <!-- Links -->
+    <div class="footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li>
+          <a class="ext-link" href="https://www.schwab.com/client-home" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Charles Schwab Login
+          </a>
+        </li>
+        <li>
+          <a class="ext-link" href="https://login.orion.com/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Orion Login
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Disclosures -->
+  <div class="footer-disclosures">
+    <h3>Disclosures</h3>
+    <p>
+      Check the background of your financial professional on FINRA's BrokerCheck.
+      Vega Financial LLC ("VF") is a registered investment advisor offering advisory
+      services in the state of WA and in other jurisdictions where exempted.
+      Registration does not imply a certain level of skill or training. The
+      information on this site is not intended as tax, accounting or legal advice, as
+      an offer or solicitation of an offer to buy or sell, or as an endorsement of
+      any company, security, fund, or other securities or non-securities offering.
+    </p>
+    <p>
+      This information should not be relied upon as the sole factor in an investment
+      making decision. Past performance is no indication of future results. Investment
+      in securities involves significant risk and has the potential for partial or
+      complete loss of funds invested. It should not be assumed that any
+      recommendations made will be profitable or equal any performance noted on this
+      site. The information on this site is provided "AS IS" and without warranties of
+      any kind either express or implied. To the fullest extent permissible pursuant
+      to applicable laws, Vega Financial disclaims all warranties, express or implied,
+      including, but not limited to, implied warranties of merchantability,
+      non-infringement, and suitability for a particular purpose. (VF) does not warrant
+      that the information on this site will be free from error. Your use of the
+      information is at your sole risk. Under no circumstances shall (VF) be liable for
+      any direct, indirect, special or consequential damages that result from the use
+      of, or the inability to use, the information provided on this site, even if (VF)
+      or a (VF) authorized representative has been advised of the possibility of such
+      damages, information contained on this site should not be considered a
+      solicitation to buy, an offer to sell, or a recommendation of any security in any
+      jurisdiction where such offer, solicitation, or recommendation would be unlawful
+      or unauthorized.
+    </p>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; {currentYear} vega-financial.com. All rights reserved</p>
   </div>
 </footer>

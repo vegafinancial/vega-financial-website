@@ -4,11 +4,12 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Home" description="Vega Financial - Big dreams deserve better than one-size-fits-all portfolios">
   <!-- Hero Section -->
-  <section class="bg-gradient-to-b text-white py-32">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <div class="badge">THE ONLY INDEPENDENT FIDUCIARY</div>
-      <h1 class="text-6xl font-bold mb-8 leading-tight">Big dreams deserve better than <br /><em>"One-size-fits-all" portfolios</em></h1>
-      <p class="text-xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">At Vega Financial, we're a fiercely independent fiduciary firm committed to putting your own interests first. We challenge conventional wisdom, deliver personalized solutions, and thrive on building long-term relationships with clients who value integrity and objectivity.</p>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="max-w-6xl mx-auto px-4 text-center hero-content">
+      <div class="badge">FEE-ONLY INDEPENDENT FIDUCIARY</div>
+      <h1 class="text-6xl font-bold mb-8 leading-tight">Big dreams deserve better than <br /><em>&ldquo;One-size-fits-all&rdquo;</em> portfolios</h1>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">At Vega Financial, we're a fee-only, independent fiduciary firm committed to putting your best interests first. We provide personalized investment management, retirement planning, and tax strategies&mdash;no cookie-cutter models, no hidden agendas.</p>
     </div>
   </section>
 
@@ -18,22 +19,34 @@ import Layout from '../layouts/Layout.astro';
       <div class="text-center mb-16">
         <h2 class="text-5xl font-bold text-vega-navy mb-4">Who We Serve</h2>
       </div>
-      
+
       <div class="cards-3col">
-        <div class="card">
-          <div class="card-icon">👥</div>
+        <div class="card serve-card">
+          <span class="corner-arc tr"></span>
+          <div class="serve-icon acc-dot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
           <h3>Pre-Retirees And Retirees</h3>
-          <p class="text-gray-600">We show your savings how to work for you, and coordinate with your tax and estate plan as if it were one cohesive whole.</p>
+          <p class="text-gray-600">Wondering if your savings can really carry you through retirement? We turn &ldquo;maybe&rdquo; into a plan you can live on with confidence.</p>
         </div>
-        <div class="card">
-          <div class="card-icon">💼</div>
+
+        <div class="card serve-card">
+          <span class="corner-arc tr"></span>
+          <span class="corner-arc bl"></span>
+          <div class="serve-icon acc-ring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
           <h3>Working Professionals</h3>
-          <p class="text-gray-600">From 401(k)s to equity compensation accounts to everything rolled together, we simplify managing wealth during your career.</p>
+          <p class="text-gray-600">From 401(K)s to equity, we connect your workplace benefits with brokerage accounts so everything works together &ndash; not in silos.</p>
         </div>
-        <div class="card">
-          <div class="card-icon">🏢</div>
+
+        <div class="card serve-card">
+          <span class="corner-arc tl"></span>
+          <div class="serve-icon acc-diamond">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6"/><line x1="12" y1="6" x2="12" y2="6"/><line x1="16" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="8" y2="10"/><line x1="12" y1="10" x2="12" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="16" y1="14" x2="16" y2="14"/></svg>
+          </div>
           <h3>Business Owners</h3>
-          <p class="text-gray-600">Let's clarify the financial impacts of your decisions with a coordinated wealth plan, succession planning, and more.</p>
+          <p class="text-gray-600">Let us handle the financial heavy lifting so you can stay focused on what you do best.</p>
         </div>
       </div>
     </div>
@@ -43,28 +56,28 @@ import Layout from '../layouts/Layout.astro';
   <section class="py-24 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-5xl font-bold text-vega-navy mb-4">Solutions For Every Financial Need</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">We provide goal-efficient portfolio construction, comprehensive wealth management, and ongoing discussions to align your coordinated strategy with your goals.</p>
+        <h2 class="text-5xl font-bold text-vega-navy mb-4 heading-underline">Solutions For Every Financial Need</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">We provide cost-efficient portfolio construction, comprehensive wealth management, and ongoing discussions to earn your confidence and help you achieve your goals.</p>
       </div>
-      
+
       <div class="solutions-grid">
-        <div class="solution-item">Comprehensive portfolio management</div>
-        <div class="solution-item">Ongoing investment monitoring</div>
-        <div class="solution-item">Proactive reviews</div>
-        <div class="solution-item">Financial planning</div>
-        <div class="solution-item">Investment strategies</div>
-        <div class="solution-item">Insurance valuation</div>
-        <div class="solution-item">Cash flow and tax planning</div>
-        <div class="solution-item">Wealth management</div>
-        <div class="solution-item">Income distribution</div>
-        <div class="solution-item">Estate planning</div>
-        <div class="solution-item">Retirement planning</div>
-        <div class="solution-item">Coordinator with other professionals</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Comprehensive portfolio management</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Ongoing investment monitoring</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Periodic reviews</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Financial planning</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Investment strategies</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Insurance solutions</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Cash flow and tax planning</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Wealth management</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Income distribution</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Estate planning</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Retirement planning</div>
+        <div class="solution-item"><span class="sol-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>Coordination with other professionals</div>
       </div>
 
       <div class="text-center mt-16">
-        <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-          Learn More About Our Investing →
+        <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Learn More About Our Services →
         </a>
       </div>
     </div>
@@ -75,52 +88,76 @@ import Layout from '../layouts/Layout.astro';
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-5xl font-bold text-vega-navy mb-4">What Matters Most</h2>
-        <p class="text-lg text-gray-600">Our approach is built on principles that set you first</p>
+        <p class="text-lg text-gray-600">Our approach is built on principles that put you first</p>
       </div>
-      
+
       <div class="icon-cards-grid">
         <div class="icon-card">
-          <div class="icon-circle">🤝</div>
+          <span class="corner-arc"></span>
+          <div class="principle-badge badge-navy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
           <h3>Holding the Relationship Accountable</h3>
-          <p>Fiduciaries aren't common in the industry; at Vega, our legal duty to you makes us a "leader" in this regard.</p>
+          <p>We understand it's hard to keep your financial goals front and center with work, children, or aging parents. You can expect a &ldquo;nudge&rdquo; from your Vega advisor if you fall behind schedule. We keep track of your progress with ongoing maintenance, quarterly rebalancing and annual reviews to help you take action and focus on achieving your financial goals.</p>
         </div>
+
         <div class="icon-card">
-          <div class="icon-circle">🎯</div>
+          <span class="corner-arc"></span>
+          <div class="principle-badge badge-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
           <h3>Why Being Objective Is Important</h3>
-          <p>We believe fiduciary is inherent to sound, objective decision-making. Being objective is fundamental to our decisions.</p>
+          <p>We know money is a highly emotional thing. Because there is usually a gap between what we already know and what we were expected to know, being objective is the key. Vega provides you insights and helps you avoid emotionally driven decisions in important money matters.</p>
         </div>
+
         <div class="icon-card">
-          <div class="icon-circle">🔮</div>
+          <span class="corner-arc"></span>
+          <div class="principle-badge badge-navy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
           <h3>Proactive Planning</h3>
-          <p>By regularly assessing market conditions and anticipating transitions, we help you plan ahead and navigate successfully.</p>
+          <p>By regularly assessing market strategies and potential life changes such as employment, tax, family, and health, we work together to anticipate your life transitions and to be financially prepared for them. Quarterly updates, pre-scheduled calls, and meetings help you stay on top of any adjustments.</p>
         </div>
+
         <div class="icon-card">
-          <div class="icon-circle">👥</div>
+          <span class="corner-arc"></span>
+          <div class="principle-badge badge-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
           <h3>Working Together as a Team</h3>
-          <p>The relationship we forge together is built on shared concern for your future and our commitment to your success.</p>
+          <p>The relationship we forge together is to help you achieve the best outcome possible for your aspirations, both personally and financially. We take the time to clearly understand your background, philosophy, needs and objectives, all while working collaboratively with you and on your behalf.</p>
         </div>
+
         <div class="icon-card">
-          <div class="icon-circle">📚</div>
+          <span class="corner-arc"></span>
+          <div class="principle-badge badge-navy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
           <h3>Providing Necessary Education</h3>
-          <p>We believe in educating our clients so you understand your investments and feel confident in your financial strategy.</p>
+          <p>We believe by providing unbiased, non-product-based education, we can help to remove anxieties, empower people to create a plan, take action, and ultimately work towards achieving their financial goals. Any education we provide is explained in plain English without industry jargon.</p>
         </div>
+
         <div class="icon-card">
-          <div class="icon-circle">✨</div>
+          <span class="corner-arc"></span>
+          <div class="principle-badge badge-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+          </div>
           <h3>A Financial Life Well Organized</h3>
-          <p>We believe a life is led better when your personal and financial life clearly reflects who you are and what matters most.</p>
+          <p>No financial canvas is the same. We prioritize the assembly of your financial picture by gathering all your important financial data. Knowing where you are compared to where you want to be is the first step. Your Vega advisor is with you every step of the way.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="bg-gradient-to-r text-white py-20">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-4">Ready to Work Together?</h2>
-      <p class="text-xl mb-12 text-blue-100">Let's start building your tax-optimized financial plan today</p>
+  <section class="cta-band">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="cta-arrow-badge" aria-hidden="true">→</div>
+      <h2>Ready to Work Together?</h2>
+      <p class="cta-sub">Let's start building your personalized financial plan today.</p>
       <div class="button-group">
-        <a href="/engagement/" class="btn btn-outline">Engagement Options</a>
-        <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get Started Today →</a>
+        <a href="/engagement/" class="btn btn-outline-light">Engagement options</a>
+        <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="btn btn-light">Get Started Today →</a>
       </div>
     </div>
   </section>

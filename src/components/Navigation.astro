@@ -6,32 +6,29 @@ const navItems = [
   { label: 'About', path: '/about/' },
   { label: 'Services', path: '/services/' },
   { label: 'Engagement', path: '/engagement/' },
-  { label: 'Contact', path: '/contact/' },
 ];
+
+const isActive = (path: string) =>
+  path === '/' ? currentPath === '/' : currentPath.startsWith(path);
 ---
 
-<nav class="bg-vega-navy text-white">
-  <div class="max-w-6xl mx-auto px-4 py-4">
-    <div class="flex justify-between items-center">
-      <div class="text-2xl font-bold text-vega-gold">Vega Financial</div>
-      <ul class="flex gap-6">
-        {
-          navItems.map((item) => (
-            <li>
-              <a
-                href={item.path}
-                class={`py-2 px-3 rounded transition ${
-                  currentPath === item.path
-                    ? 'bg-vega-gold text-vega-navy'
-                    : 'hover:text-vega-gold'
-                }`}
-              >
-                {item.label}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Vega Financial — home">
+      <img src="/logos/logo_main.svg" alt="Vega Financial" width="80" height="26" />
+    </a>
+
+    <ul class="nav-links">
+      {
+        navItems.map((item) => (
+          <li>
+            <a href={item.path} class={isActive(item.path) ? 'is-active' : ''}>
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+      <li><a href="/contact/" class="nav-cta">Get started</a></li>
+    </ul>
   </div>
 </nav>
