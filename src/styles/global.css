@@ -865,3 +865,323 @@ textarea:focus {
 .faq-item p {
   margin-bottom: 0;
 }
+
+/* =========================================================================
+   ABOUT PAGE
+   ========================================================================= */
+
+/* Inner-page hero (navy gradient, centered) */
+.page-hero {
+  background: linear-gradient(135deg, #1d1a4e 0%, var(--navy) 55%, var(--navy-light) 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page-hero .subtitle {
+  font-size: 1.1rem;
+  color: #c7caf0;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Eyebrow label (navy on light pill) */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #eef0fb;
+  color: var(--navy);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  margin-bottom: 1.1rem;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: var(--navy-light);
+}
+
+/* Meet Our Team */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: var(--white);
+  border-radius: 1.1rem;
+  box-shadow: 0 10px 30px -12px rgba(38, 34, 97, 0.2);
+  overflow: hidden;
+}
+
+.team-banner {
+  height: 90px;
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+}
+
+.team-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 4px solid var(--white);
+  margin: -55px auto 0;
+  display: block;
+  box-shadow: 0 6px 16px rgba(38, 34, 97, 0.2);
+}
+
+.team-body {
+  padding: 0.75rem 2rem 2rem;
+}
+
+.team-name {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: 0.75rem;
+}
+
+.team-title {
+  text-align: center;
+  color: var(--gray-500);
+  margin-bottom: 1.5rem;
+}
+
+.team-bio p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.97rem;
+}
+
+.team-contact {
+  border-top: 1px solid var(--gray-200);
+  padding-top: 1.5rem;
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: var(--gray-600);
+  font-size: 0.95rem;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 9999px;
+  background: var(--blue);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+/* Prose band (Team Approach) */
+.prose-band {
+  background: var(--gray-100);
+}
+
+.prose-narrow {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.prose-narrow p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+/* Recognized Leadership */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.leadership-photo {
+  width: 100%;
+  border-radius: 1.1rem;
+  display: block;
+  box-shadow: 0 16px 36px -16px rgba(38, 34, 97, 0.35);
+}
+
+.leadership-content h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1.25rem;
+}
+
+.leadership-content p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.award-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 0.9rem;
+  padding: 1.5rem 0.75rem;
+  text-align: center;
+  box-shadow: 0 6px 18px -10px rgba(38, 34, 97, 0.15);
+}
+
+.award-card img {
+  height: 56px;
+  width: auto;
+  margin: 0 auto 0.75rem;
+  display: block;
+  object-fit: contain;
+}
+
+.award-card span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--gray-500);
+  text-transform: uppercase;
+}
+
+/* Our Mission band */
+.mission-band {
+  background: linear-gradient(135deg, #1d1a4e, var(--navy) 60%, var(--navy-light));
+  color: var(--white);
+}
+
+.mission-panel {
+  max-width: 50rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.1rem;
+  padding: 2.5rem;
+}
+
+.mission-panel h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.mission-panel p {
+  color: #d2d4f0;
+  line-height: 1.7;
+  margin-bottom: 1.1rem;
+  font-size: 0.98rem;
+}
+
+.mission-quote {
+  border-left: 3px solid var(--blue-mid);
+  padding-left: 1.25rem;
+  font-style: italic;
+  color: #c7caf0;
+  margin: 1.25rem 0;
+}
+
+/* Step cards (How We Work) — numbered navy badge */
+.step-badge {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.85rem;
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Value items (Your Interests, First and Always) */
+.values-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.value-item {
+  text-align: center;
+}
+
+.value-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  background: var(--blue);
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+
+.value-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.value-item h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.6rem;
+}
+
+.value-item p {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Stack the About grids on small screens */
+@media (max-width: 820px) {
+  .team-grid,
+  .leadership-grid,
+  .values-row {
+    grid-template-columns: 1fr;
+  }
+}

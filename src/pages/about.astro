@@ -2,60 +2,221 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="About" description="Learn about Vega Financial's mission, values, and expertise">
+<Layout title="About" description="Meet the team committed to putting your interests first.">
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-vega-navy to-blue-900 text-white py-20">
+  <section class="page-hero">
     <div class="max-w-6xl mx-auto px-4">
-      <h1 class="text-5xl font-bold mb-4">About Vega Financial</h1>
-      <p class="text-xl text-blue-100">Expert guidance for building and protecting wealth</p>
+      <h1>About Vega Financial</h1>
+      <p class="subtitle">Meet the team committed to putting your interests first. We combine decades of experience with a personal, fiduciary approach to help you pursue your financial goals.</p>
     </div>
   </section>
 
-  <!-- Mission & Values -->
-  <section class="py-20 bg-white">
+  <!-- Meet Our Team -->
+  <section class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="grid grid-cols-2 gap-12">
-        <div>
-          <h2 class="text-3xl font-bold text-vega-navy mb-6">Our Mission</h2>
-          <p class="text-gray-600 mb-4 leading-relaxed">
-            At Vega Financial, we empower families to build lasting wealth through expert financial guidance, personalized planning, and comprehensive solutions.
-          </p>
-          <p class="text-gray-600 leading-relaxed">
-            We believe in taking a holistic approach to financial planning—understanding your values, goals, and circumstances to create strategies that truly align with your vision for the future.
-          </p>
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold text-vega-navy mb-4">Meet Our Team</h2>
+      </div>
+
+      <div class="team-grid">
+        <!-- Tyson -->
+        <div class="team-card">
+          <div class="team-banner"></div>
+          <img class="team-avatar" src="/images/team/tyson.jpg" alt="Tyson Farmer" width="110" height="110" />
+          <div class="team-body">
+            <div class="team-name">Tyson Farmer, AMMS</div>
+            <div class="team-title">Founder / Financial Advisor</div>
+            <div class="team-bio">
+              <p>Recognized by Forbes and Top 100 for his fiduciary-first approach in 2024, Tyson Farmer brings 20 years of experience helping families, businesses, and executives shape their financial futures.</p>
+              <p>After leadership roles at Ameriprise, JPMorgan, and Edward Jones, he founded Vega Financial on Mercer Island in 2021 to deliver customized, client-first planning.</p>
+              <p>A lifelong Seattle-area resident, Tyson is active in the Mercer Island Chamber of Commerce, supports first responders, and enjoys triathlons, paddle boarding, and time with his wife and daughter.</p>
+            </div>
+            <div class="team-contact">
+              <div class="contact-row">
+                <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span>(206) 883-VEGA</span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
+                <span>Tyson@vega-financial.com</span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <span>P.O. Box 158, Mercer Island, WA 98040</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <h2 class="text-3xl font-bold text-vega-navy mb-6">Our Values</h2>
-          <ul class="space-y-4">
-            <li class="flex items-start">
-              <div class="w-6 h-6 bg-blue-400 rounded-full mr-4 mt-1 flex-shrink-0"></div>
-              <span class="text-gray-600"><strong class="text-vega-navy">Integrity:</strong> Transparent, honest relationships built on trust</span>
-            </li>
-            <li class="flex items-start">
-              <div class="w-6 h-6 bg-blue-400 rounded-full mr-4 mt-1 flex-shrink-0"></div>
-              <span class="text-gray-600"><strong class="text-vega-navy">Excellence:</strong> Expert guidance backed by continuous learning</span>
-            </li>
-            <li class="flex items-start">
-              <div class="w-6 h-6 bg-blue-400 rounded-full mr-4 mt-1 flex-shrink-0"></div>
-              <span class="text-gray-600"><strong class="text-vega-navy">Client-Focused:</strong> Your goals drive our recommendations</span>
-            </li>
-            <li class="flex items-start">
-              <div class="w-6 h-6 bg-blue-400 rounded-full mr-4 mt-1 flex-shrink-0"></div>
-              <span class="text-gray-600"><strong class="text-vega-navy">Partnership:</strong> Long-term relationships built on mutual success</span>
-            </li>
-          </ul>
+
+        <!-- Teresa -->
+        <div class="team-card">
+          <div class="team-banner"></div>
+          <img class="team-avatar" src="/images/team/teresa.jpg" alt="Teresa Clemens" width="110" height="110" />
+          <div class="team-body">
+            <div class="team-name">Teresa Clemens, Ed.S</div>
+            <div class="team-title">Investment Advisor Representative</div>
+            <div class="team-bio">
+              <p>Teresa is a financial professional passionate about helping clients gain clarity and confidence in their futures.</p>
+              <p>With a background in Educational Psychology and experience across equities, real estate, and portfolio construction, she blends behavioral insight with strategic planning.</p>
+              <p>Based in Plano, Texas, Teresa enjoys an active lifestyle and is known for her practical, disciplined style and genuine client connections.</p>
+            </div>
+            <div class="team-contact">
+              <div class="contact-row">
+                <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span>(425) 475-VEGA</span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
+                <span>Teresa@vega-financial.com</span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <span>P.O. Box 864893, Plano, TX 75086</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Approach -->
+  <section class="py-24 prose-band">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-5xl font-bold text-vega-navy">Team Approach</h2>
+      </div>
+      <div class="prose-narrow">
+        <p>Our reasons for becoming financial professionals are deeply personal. We repeatedly saw many friends and family struggling to find the help they needed to map out their financial future. We are confident that with our understanding of personal finance, coupled with our training as financial professionals, we can help people better prepare for the future.</p>
+        <p>After years in the business, we have developed a reputation for educating individuals in an easy-to-understand manner so they can grasp personal finance and use those concepts to pursue their financial objectives. We feel a commitment to our community.</p>
+        <p>Over the years, we have found that a team approach can be an effective method to help clients who have a wide variety of needs as they maneuver through a complex financial-services world. We believe it has far-reaching benefits for our clients to get opinions from several sources with diverse backgrounds, education, and experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recognized Leadership -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="leadership-grid">
+        <img class="leadership-photo" src="/images/leadership.jpg" alt="Tyson Farmer" />
+        <div class="leadership-content">
+          <span class="eyebrow">Excellence in Finance</span>
+          <h2>Recognized Leadership</h2>
+          <p>Tyson Farmer has been honored as a leader in the financial industry, recognized for innovation, fiduciary commitment, and dedication to client success.</p>
+          <p>His approach combines personalized financial stewardship with forward-thinking strategies, earning accolades from top industry publications.</p>
+          <div class="award-grid">
+            <div class="award-card">
+              <img src="/images/award-innovators.png" alt="Top 100 Innovators" />
+              <span>Top 100 Innovators</span>
+            </div>
+            <div class="award-card">
+              <img src="/images/award-finance.png" alt="Top 100 in Finance" />
+              <span>Top 100 in Finance</span>
+            </div>
+            <div class="award-card">
+              <img src="/images/forbes.png" alt="Featured in Forbes" />
+              <span>Featured in Forbes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Mission -->
+  <section class="py-24 mission-band">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="mission-panel">
+        <h2>Our Mission</h2>
+        <p>Our mission is to get to know and understand your needs, wants, and long-term goals. We want to help you develop, implement, and monitor a strategy that's designed to address your individual situation.</p>
+        <p>We understand the challenges families face today. From managing debt to saving for college to retirement, these personal finance challenges can be overwhelming. Our commitment is to utilize all of our resources to help you pursue your goals.</p>
+        <p class="mission-quote">"We believe in thinking 'out of the box' and we are not afraid to challenge conventional wisdom in our approach to investing and preserving wealth. All of our energy, commitment, and efforts are focused on you, the client, and your satisfaction."</p>
+        <p>One of our primary goals is to develop a long-term, trusting relationship with you. No one strategy fits everyone, which is why every client gets our undivided attention—from planning to execution to follow-up.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold text-vega-navy mb-4">How We Work</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">We create strategies that are tailored to your needs and goals. Years of experience have prepared us to guide you through your life transitions.</p>
+      </div>
+
+      <div class="icon-cards-grid">
+        <div class="icon-card">
+          <div class="step-badge">1</div>
+          <h3>Listen First</h3>
+          <p>Every relationship begins with understanding. We take time to learn your story, values, and goals — because your financial plan should reflect more than just numbers.</p>
+        </div>
+        <div class="icon-card">
+          <div class="step-badge">2</div>
+          <h3>Clarify Priorities</h3>
+          <p>Together, we identify what matters most — retirement security, business planning, family legacy, or financial independence — so our strategy is aligned with your vision.</p>
+        </div>
+        <div class="icon-card">
+          <div class="step-badge">3</div>
+          <h3>Build a Customized Plan</h3>
+          <p>No templates, no cookie-cutter models. We design a plan tailored to your unique situation, supported by research, tools, and decades of experience.</p>
+        </div>
+        <div class="icon-card">
+          <div class="step-badge">4</div>
+          <h3>Provide Transparent Guidance</h3>
+          <p>As fiduciaries, we put your interests first. Fees are clear, recommendations are unbiased, and every decision is explained in plain language.</p>
+        </div>
+        <div class="icon-card">
+          <div class="step-badge">5</div>
+          <h3>Implement with Discipline</h3>
+          <p>From investment strategies to risk management, we execute with a focus on efficiency and consistency — giving you confidence that your plan is in motion.</p>
+        </div>
+        <div class="icon-card">
+          <div class="step-badge">6</div>
+          <h3>Adjust as Life Changes</h3>
+          <p>Your life and goals evolve, and so should your plan. We provide ongoing guidance, reviews, and adjustments to keep you on track.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your Interests, First and Always -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-bold text-vega-navy mb-4">Your Interests, First and Always</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Our firm is based on our relationship with our clients, plain and simple. We work with integrity and trust for you, not for Wall Street. Your success is our success.</p>
+      </div>
+
+      <div class="values-row">
+        <div class="value-item">
+          <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Fiduciary Duty</h3>
+          <p>We're legally and ethically bound to put your interests first, always.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h3>Client-First Planning</h3>
+          <p>Every strategy we develop is customized to your unique situation and goals.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Transparency</h3>
+          <p>Fee-only means no hidden costs, commissions, or conflicts of interest.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="bg-gradient-to-r from-vega-navy to-blue-900 text-white py-16">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-4">Ready to Learn More?</h2>
-      <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-400 text-vega-navy px-8 py-3 rounded font-bold hover:bg-blue-300 transition">
-        Schedule Your Free Consultation
-      </a>
+  <section class="cta-band">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="cta-arrow-badge" aria-hidden="true">→</div>
+      <h2>Ready to Work Together?</h2>
+      <p class="cta-sub">Let's start building your personalized financial plan today.</p>
+      <div class="button-group">
+        <a href="/engagement/" class="btn btn-outline-light">Engagement options</a>
+        <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="btn btn-light">Get Started Today →</a>
+      </div>
     </div>
   </section>
 </Layout>
