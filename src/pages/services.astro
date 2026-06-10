@@ -1,100 +1,103 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const iconTarget = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>';
+const iconPie = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>';
+const iconShield = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>';
+const iconTrend = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>';
+const iconHeart = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
 ---
 
-<Layout title="Services" description="Comprehensive financial services for wealth creation and security">
+<Layout title="Services" description="Comprehensive financial solutions — three core pillars designed to secure your financial future.">
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-vega-navy to-blue-900 text-white py-20">
+  <section class="page-hero">
     <div class="max-w-6xl mx-auto px-4">
-      <h1 class="text-5xl font-bold mb-4">Our Services</h1>
-      <p class="text-xl text-blue-100">Comprehensive solutions for every stage of your financial journey</p>
+      <h1>Comprehensive Financial Solutions</h1>
+      <p class="subtitle">Three core pillars designed to secure your financial future</p>
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="space-y-16">
-        <div class="border-l-4 border-blue-400 pl-8">
-          <h2 class="text-3xl font-bold text-vega-navy mb-4">Financial Planning</h2>
-          <p class="text-gray-600 mb-6 leading-relaxed">
-            Our comprehensive financial planning process helps you align your finances with your life goals. We analyze your complete financial picture and create a detailed roadmap for success.
-          </p>
-          <div class="grid grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-bold text-vega-navy mb-2">Planning Services</h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>• Retirement planning and projections</li>
-                <li>• Estate planning strategies</li>
-                <li>• Tax optimization</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-bold text-vega-navy mb-2">Risk Management</h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>• Insurance needs analysis</li>
-                <li>• Portfolio risk assessment</li>
-                <li>• Business succession planning</li>
-              </ul>
-            </div>
-          </div>
+  <!-- 1. Planning for a Secure Future (image left) -->
+  <section class="feature-row">
+    <img class="feature-img" src="/images/services/planning.jpg" alt="Couple planning their retirement" />
+    <div class="feature-content">
+      <span class="eyebrow">Retirement Planning</span>
+      <h2>Planning for a Secure Future</h2>
+      <p class="feature-desc">Navigate the path to retirement with confidence. We help ensure your golden years are financially secure through comprehensive planning and strategic guidance.</p>
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="feature-item-icon" set:html={iconTarget}></span>
+          <div><h4>Strategic Goal Setting</h4><p>Define clear retirement objectives aligned with your lifestyle vision</p></div>
         </div>
-
-        <div class="border-l-4 border-blue-400 pl-8">
-          <h2 class="text-3xl font-bold text-vega-navy mb-4">Investment Management</h2>
-          <p class="text-gray-600 mb-6 leading-relaxed">
-            We build tailored investment strategies designed to help you achieve your financial goals. Our approach combines expert analysis with disciplined portfolio management.
-          </p>
-          <div class="grid grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-bold text-vega-navy mb-2">Portfolio Services</h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>• Custom portfolio construction</li>
-                <li>• Ongoing rebalancing</li>
-                <li>• Performance monitoring</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-bold text-vega-navy mb-2">Investment Strategies</h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>• Diversification strategies</li>
-                <li>• Tax-efficient investing</li>
-                <li>• Alternative investments</li>
-              </ul>
-            </div>
-          </div>
+        <div class="feature-item">
+          <span class="feature-item-icon" set:html={iconPie}></span>
+          <div><h4>Tailored Portfolio Strategy</h4><p>Customized investment approaches for long-term growth and stability</p></div>
         </div>
-
-        <div class="border-l-4 border-blue-400 pl-8">
-          <h2 class="text-3xl font-bold text-vega-navy mb-4">Retirement Planning</h2>
-          <p class="text-gray-600 mb-6 leading-relaxed">
-            We help you plan for the retirement you deserve. Our retirement planning services ensure you have the financial resources and strategies needed for a secure future.
-          </p>
-          <div class="grid grid-cols-2 gap-6">
-            <div>
-              <h4 class="font-bold text-vega-navy mb-2">Planning Tools</h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>• Retirement income projections</li>
-                <li>• Social Security optimization</li>
-                <li>• Healthcare cost planning</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-bold text-vega-navy mb-2">Implementation</h4>
-              <ul class="space-y-2 text-gray-600">
-                <li>• Account distribution strategies</li>
-                <li>• Tax-efficient withdrawals</li>
-                <li>• Long-term care planning</li>
-              </ul>
-            </div>
-          </div>
+        <div class="feature-item">
+          <span class="feature-item-icon" set:html={iconShield}></span>
+          <div><h4>Comprehensive Risk Management</h4><p>Protect your wealth from market volatility and unforeseen challenges</p></div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="mt-20 text-center">
-        <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="inline-block bg-vega-navy text-white px-8 py-3 rounded font-bold hover:bg-blue-900 transition">
-          Schedule a Consultation
-        </a>
+  <!-- 2. Building Wealth with Purpose (image right) -->
+  <section class="feature-row">
+    <div class="feature-content">
+      <span class="eyebrow">Investment Strategy</span>
+      <h2>Building Wealth with Purpose</h2>
+      <p class="feature-desc">Every investment story is unique. We create personalized strategies that align with your goals, values, and risk tolerance.</p>
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="feature-item-icon" set:html={iconPie}></span>
+          <div><h4>Personalized Portfolio Management</h4><p>Custom investment solutions tailored to your unique financial landscape</p></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-item-icon" set:html={iconTrend}></span>
+          <div><h4>Continuous Market Intelligence</h4><p>Stay ahead with real-time monitoring of opportunities and risks</p></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-item-icon" set:html={iconHeart}></span>
+          <div><h4>Values-Based Investing</h4><p>Align your portfolio with your principles and ethical standards</p></div>
+        </div>
+      </div>
+    </div>
+    <img class="feature-img" src="/images/services/investing.jpg" alt="Financial documents and charts" />
+  </section>
+
+  <!-- 3. Making Every Dollar Count (image left) -->
+  <section class="feature-row">
+    <img class="feature-img" src="/images/services/money.jpg" alt="Piggy bank, calculator and house model" />
+    <div class="feature-content">
+      <span class="eyebrow">Money Management</span>
+      <h2>Making Every Dollar Count</h2>
+      <p class="feature-desc">Smart budgeting and cash flow strategies to help you spend less, save more, and build your future.</p>
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="feature-item-icon" set:html={iconTarget}></span>
+          <div><h4>Goal-Based Planning</h4><p>Align spending with your priorities</p></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-item-icon" set:html={iconTrend}></span>
+          <div><h4>Cash Flow Analysis</h4><p>Optimize where every dollar goes</p></div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-item-icon" set:html={iconShield}></span>
+          <div><h4>Emergency Fund Building</h4><p>Create a robust financial safety net</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="cta-arrow-badge" aria-hidden="true">→</div>
+      <h2>Ready to Work Together?</h2>
+      <p class="cta-sub">Let's start building your personalized financial plan today.</p>
+      <div class="button-group">
+        <a href="/engagement/" class="btn btn-outline-light">Engagement options</a>
+        <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="btn btn-light">Get Started Today →</a>
       </div>
     </div>
   </section>
