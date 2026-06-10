@@ -1577,3 +1577,306 @@ textarea:focus {
   .eng-cols,
   .eng-price { grid-template-columns: 1fr; }
 }
+
+/* =========================================================================
+   CONTACT / GET STARTED PAGE
+   ========================================================================= */
+.contact-grid {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.contact-form-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 1.1rem;
+  padding: 3rem 2.75rem;
+  min-height: 38rem;
+  /* soft, slightly blue-tinted floating shadow (per design) */
+  box-shadow: 0 12px 34px -12px rgba(64, 120, 190, 0.28);
+}
+
+.contact-form-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+}
+
+.form-banner {
+  border-radius: 0.75rem;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+}
+
+.form-banner.success {
+  background: #eaf7ef;
+  border: 1px solid #bfe6cd;
+  color: #1f7a44;
+}
+
+.form-banner.error {
+  background: #fdecec;
+  border: 1px solid #f5c2c2;
+  color: #b3261e;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.8rem 0.95rem;
+  border: 1.5px solid var(--gray-300);
+  border-radius: 0.75rem;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: var(--navy);
+  background: var(--white);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder,
+.form-field select.is-placeholder {
+  color: #9aa0ab;
+  font-weight: 400;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: #5b636e;
+  margin: 0.25rem 0 1.5rem;
+}
+
+.checkbox-row input {
+  width: auto;
+}
+
+.btn-submit {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover { background: var(--navy-light); }
+.btn-submit svg { width: 1.1rem; height: 1.1rem; }
+
+.form-note {
+  text-align: center;
+  color: #9aa0ab;
+  font-size: 0.88rem;
+  margin-top: 1rem;
+}
+
+/* Schedule a call card */
+.schedule-card {
+  position: relative;
+  overflow: hidden;
+  /* white through the middle, faint blue only toward the edges */
+  background: radial-gradient(130% 130% at 50% 45%, #ffffff 42%, #edf5fc 100%);
+  border: 1px solid #e1ebf4;
+  box-shadow: 0 12px 34px -12px rgba(64, 120, 190, 0.28);
+  border-radius: 1.1rem;
+  padding: 3rem 2.5rem;
+  min-height: 38rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* faint decorative shapes (clipped by card overflow) */
+.schedule-card::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  border: 1.5px solid rgba(99, 160, 210, 0.18);
+}
+
+.schedule-card::after {
+  content: '';
+  position: absolute;
+  bottom: 36px;
+  right: 36px;
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(99, 160, 210, 0.18);
+  transform: rotate(70deg);
+}
+
+/* keep card content above the decorative shapes */
+.schedule-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.schedule-badge {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.schedule-badge svg { width: 1.9rem; height: 1.9rem; }
+
+/* gentle jiggle when the card is hovered */
+.schedule-card:hover .schedule-badge {
+  animation: badge-jiggle 0.55s ease;
+}
+
+@keyframes badge-jiggle {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-9deg); }
+  45% { transform: rotate(8deg); }
+  70% { transform: rotate(-5deg); }
+  88% { transform: rotate(3deg); }
+}
+
+.schedule-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+.schedule-card .schedule-desc {
+  color: #5b636e;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+  max-width: 22rem;
+}
+
+.btn-schedule {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.85rem 1.6rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-schedule:hover { background: var(--navy-light); opacity: 1; }
+.btn-schedule svg { width: 1.1rem; height: 1.1rem; }
+.btn-schedule { font-weight: 500; }
+
+.schedule-note {
+  color: #8a93a3;
+  font-size: 0.85rem;
+  margin-top: 1.25rem;
+}
+
+/* FAQ accordion (native details/summary) */
+.faq-accordion {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.faq-acc {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 0.85rem;
+  box-shadow: 0 4px 14px -10px rgba(38, 34, 97, 0.15);
+  overflow: hidden;
+}
+
+.faq-acc summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 1.15rem;
+}
+
+.faq-acc summary::-webkit-details-marker { display: none; }
+
+.faq-acc summary .chev {
+  flex-shrink: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  color: #9aa0ab;
+  transition: transform 0.2s ease;
+}
+
+.faq-acc[open] summary .chev { transform: rotate(180deg); }
+
+.faq-acc .faq-answer {
+  padding: 0 1.5rem 1.4rem;
+}
+
+.faq-acc .faq-answer p {
+  color: #5b636e;
+  line-height: 1.65;
+  font-size: 0.95rem;
+  margin: 0 0 0.9rem;
+}
+
+.faq-acc .faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 820px) {
+  .contact-grid,
+  .form-row { grid-template-columns: 1fr; }
+}

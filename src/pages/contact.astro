@@ -1,102 +1,168 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const faqs = [
+  {
+    q: 'Is the first consultation really free?',
+    a: ['Yes. Vega Financial offers a complimentary initial consultation to discuss your financial goals, answer general questions, and determine whether working together may be a good fit. There is no obligation to engage ongoing services following this meeting.'],
+  },
+  {
+    q: 'Do you work with clients outside of Washington?',
+    a: ['Yes. Vega Financial works with clients across the United States, subject to applicable state registration requirements. Meetings can be held in person or virtually, depending on client location and preference.'],
+  },
+  {
+    q: 'How much experience do you have?',
+    a: [
+      "Tyson Farmer brings more than 20 years of experience working with families, business owners, and executives on financial planning and investment management. He previously held advisory and leadership roles at Ameriprise, JPMorgan, and Edward Jones. In 2021, he founded Vega Financial on Mercer Island to provide personalized financial planning and investment advice tailored to each client's goals and circumstances.",
+      'In 2024, Tyson was recognized by national publications, including Forbes and Top 100, for his work in the financial advisory industry.',
+    ],
+  },
+  {
+    q: 'What is your investment philosophy?',
+    a: ["Vega Financial takes a disciplined, diversified approach to investing, with an emphasis on large-cap value, growth, and income strategies. Portfolios are constructed with consideration for each client's objectives, time horizon, risk tolerance, and overall financial plan. Investment strategies are reviewed and adjusted as client circumstances evolve."],
+  },
+  {
+    q: 'How often do you meet with clients?',
+    a: ["We tailor review schedules based on each client's goals, financial situation, and complexity. For many ongoing clients, reviews are typically conducted one or more times per year, with additional meetings as needed when life events, market conditions, or planning needs change."],
+  },
+  {
+    q: 'Do you help review my current employee benefits, including my 401(k), before retirement?',
+    a: ['Yes. Vega Financial can review employee benefits, including employer retirement plans such as 401(k) options, as part of a broader financial planning discussion. These reviews may be provided on an hourly consulting basis. For ongoing clients, employee benefit and retirement plan reviews are typically included as part of the advisory services covered by the investment management fee.'],
+  },
+  {
+    q: 'Am I tied into a contract?',
+    a: ['Vega Financial does not require long-term contracts. Fees are clearly disclosed and structured based on the services provided. Hourly consulting clients are billed only for the time spent. For ongoing investment advisory clients, advisory fees are calculated monthly based on investable assets under management and are prorated through the date services are terminated, as described in the advisory agreement.'],
+  },
+  {
+    q: "What steps does Vega take to protect clients' information and privacy?",
+    a: [
+      'Protecting client information is a priority at Vega Financial. We use secure technology, including Citrix ShareFile, to exchange sensitive documents and information with clients. Client data is handled in accordance with applicable privacy and security standards and is only shared when necessary to provide advisory services or as required by law.',
+      'Client investment accounts are held with Charles Schwab, which provides custody of assets and employs its own security protocols to safeguard account information, holdings, and transactions.',
+    ],
+  },
+];
+
+const chevron = '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
+const clock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
 ---
 
-<Layout title="Contact" description="Get in touch with Vega Financial">
+<Layout title="Get Started" description="Begin your journey toward financial confidence with a simple, straightforward onboarding process.">
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-vega-navy to-blue-900 text-white py-20">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h1 class="text-5xl font-bold mb-4">Contact Us</h1>
-      <p class="text-xl text-blue-100">We're here to help. Get in touch today.</p>
+  <section class="page-hero">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1>Get Started</h1>
+      <p class="subtitle">Begin your journey toward financial confidence with a simple, straightforward onboarding process designed to understand your unique needs and goals.</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid grid-cols-2 gap-12">
-        <!-- Contact Info -->
-        <div>
-          <h2 class="text-3xl font-bold text-vega-navy mb-8">Get in Touch</h2>
-          <div class="space-y-8">
-            <div>
-              <h3 class="font-bold text-vega-navy mb-2 text-lg">Email</h3>
-              <p class="text-gray-600">
-                <a href="mailto:info@vega-financial.com" class="hover:text-vega-navy">
-                  info@vega-financial.com
-                </a>
-              </p>
+  <!-- Form + Schedule -->
+  <section class="py-24 bg-white">
+    <div class="contact-grid">
+      <!-- Send a Message -->
+      <div class="contact-form-card">
+        <h2>Send a Message</h2>
+        <div id="formBanner" class="form-banner" hidden></div>
+        <form id="contactForm" action="/api/contact" method="POST">
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" name="name" placeholder="Full Name *" aria-label="Full Name" required />
             </div>
-            <div>
-              <h3 class="font-bold text-vega-navy mb-2 text-lg">Schedule a Call</h3>
-              <p class="text-gray-600 mb-4">Book a free consultation directly:</p>
-              <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-400 text-vega-navy px-6 py-2 rounded font-bold hover:bg-blue-300 transition">
-                Schedule Now
-              </a>
-            </div>
-            <div>
-              <h3 class="font-bold text-vega-navy mb-2 text-lg">Business Hours</h3>
-              <p class="text-gray-600">
-                Monday - Friday: 9:00 AM - 5:00 PM EST<br />
-                Saturday - Sunday: Closed
-              </p>
+            <div class="form-field">
+              <input type="email" name="email" placeholder="Email Address *" aria-label="Email Address" required />
             </div>
           </div>
-        </div>
+          <div class="form-row">
+            <div class="form-field">
+              <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number" />
+            </div>
+            <div class="form-field">
+              <select id="subject" name="subject" class="is-placeholder" aria-label="Subject" required onchange="this.classList.toggle('is-placeholder', !this.value)">
+                <option value="" disabled selected>Subject *</option>
+                <option>General inquiry</option>
+                <option>Schedule a consultation</option>
+                <option>Investment management</option>
+                <option>Retirement planning</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <textarea name="message" rows="6" placeholder="Message *" aria-label="Message" required></textarea>
+          </div>
+          <label class="checkbox-row">
+            <input type="checkbox" name="new_client" />
+            I would like to be a new client with Vega Financial
+          </label>
+          <button type="submit" class="btn-submit h-captcha" data-sitekey="732c3298-f042-4946-8aac-da766498ec18" data-callback="onHcaptchaSuccess" data-size="invisible">
+            Send Message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <p class="form-note">We typically respond within one business day</p>
+        </form>
+      </div>
 
-        <!-- Contact Form -->
-        <div>
-          <h2 class="text-3xl font-bold text-vega-navy mb-8">Send us a Message</h2>
-          <form action="https://formspree.io/f/xyzabc123" method="POST" class="space-y-4">
-            <div>
-              <label for="name" class="block text-sm font-bold text-vega-navy mb-2">Name *</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-400"
-              />
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-bold text-vega-navy mb-2">Email *</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-400"
-              />
-            </div>
-            <div>
-              <label for="phone" class="block text-sm font-bold text-vega-navy mb-2">Phone</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-400"
-              />
-            </div>
-            <div>
-              <label for="message" class="block text-sm font-bold text-vega-navy mb-2">Message *</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-400"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="w-full bg-vega-navy text-white px-8 py-3 rounded font-bold hover:bg-blue-900 transition"
-            >
-              Send Message
-            </button>
-          </form>
-          <p class="text-sm text-gray-500 mt-4">We'll get back to you within 24 business hours.</p>
-        </div>
+      <!-- Schedule a Call -->
+      <div class="schedule-card">
+        <div class="schedule-badge" set:html={clock}></div>
+        <h3>Schedule Your Free Introductory Call</h3>
+        <p class="schedule-desc">Book a complimentary 30-minute consultation to discuss your financial goals and learn how we can help you achieve them.</p>
+        <a href="https://scheduler.zoom.us/tyson-farmer/start-your-financial-journey-with-vega" target="_blank" rel="noopener noreferrer" class="btn-schedule">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Book Your Call Now
+        </a>
+        <p class="schedule-note">No obligation • 30-minute call • Free conversation</p>
       </div>
     </div>
   </section>
+
+  <!-- FAQ -->
+  <section class="py-24 bg-gray-50" style="padding-top: 9rem;">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="sec-heading">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-accordion">
+        {
+          faqs.map((item) => (
+            <details class="faq-acc">
+              <summary>{item.q}<Fragment set:html={chevron} /></summary>
+              <div class="faq-answer">{item.a.map((p) => <p>{p}</p>)}</div>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- hCaptcha (invisible) submits the form after passing the challenge -->
+  <script is:inline>
+    function onHcaptchaSuccess() {
+      document.getElementById('contactForm').submit();
+    }
+  </script>
+  <script is:inline src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
+  <!-- Show a success / error banner based on the redirect from /api/contact -->
+  <script is:inline>
+    (function () {
+      var p = new URLSearchParams(location.search);
+      var b = document.getElementById('formBanner');
+      if (!b) return;
+      if (p.get('sent')) {
+        b.textContent = 'Thanks — your message has been sent. We typically respond within one business day.';
+        b.className = 'form-banner success';
+        b.hidden = false;
+      } else if (p.get('error')) {
+        var msg = {
+          missing: 'Please add your name, email, and a message, then try again.',
+          captcha: 'We could not verify the captcha. Please try again.',
+          send: 'Sorry, something went wrong sending your message. Please email info@vega-financial.com.',
+          server: 'Sorry, something went wrong. Please try again in a moment.',
+        };
+        b.textContent = msg[p.get('error')] || 'Sorry, something went wrong. Please try again.';
+        b.className = 'form-banner error';
+        b.hidden = false;
+      }
+    })();
+  </script>
 </Layout>
