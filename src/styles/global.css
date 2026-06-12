@@ -320,6 +320,7 @@ a:hover {
 }
 
 .site-nav .nav-inner {
+  position: relative;
   max-width: 72rem;
   margin: 0 auto;
   height: 80px;
@@ -385,6 +386,77 @@ a:hover {
   background-color: var(--navy-light);
   color: var(--white);
   opacity: 1;
+}
+
+/* Hamburger toggle — hidden on desktop, shown at the mobile breakpoint */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 0 auto;
+  background: var(--navy);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+/* animate bars into an X when open */
+.nav-toggle.is-open .nav-toggle-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.is-open .nav-toggle-bar:nth-child(2) { opacity: 0; }
+.nav-toggle.is-open .nav-toggle-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 768px) {
+  .site-nav { padding: 0 1.25rem; }
+
+  .nav-toggle { display: flex; }
+
+  /* turn the link row into a dropdown panel under the bar */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--white);
+    border-top: 1px solid var(--gray-200);
+    box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.12);
+    padding: 0.5rem 0;
+    display: none;
+  }
+
+  .nav-links.is-open { display: flex; }
+
+  .nav-links li { width: 100%; }
+
+  .nav-links a {
+    display: block;
+    padding: 0.9rem 1.5rem;
+    border-bottom: none;
+  }
+
+  .nav-links a.is-active {
+    border-bottom: none;
+    background: #f4f6fb;
+  }
+
+  .nav-links a.nav-cta {
+    margin: 0.6rem 1.5rem 0.4rem;
+    text-align: center;
+  }
 }
 
 /* Badge */
@@ -768,6 +840,75 @@ a:hover {
   .footer-top {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/* ---------------------------------------------------------------------------
+   HOME PAGE responsive grids — the multi-column home sections had no mobile
+   collapse, so they squished on small screens. Step them down: 3→2 cols on
+   tablet, everything → 1 col on phones.
+   --------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .cards-3col,
+  .solutions-grid,
+  .icon-cards-grid,
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .cards-3col,
+  .solutions-grid,
+  .icon-cards-grid,
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+  }
+
+  /* full-width tap targets for stacked CTAs */
+  .button-group { flex-direction: column; align-items: stretch; }
+  .button-group .btn { width: 100%; text-align: center; }
+}
+
+@media (max-width: 560px) {
+  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* ---------------------------------------------------------------------------
+   Mobile typography & section spacing — the display sizes (text-5xl/6xl) and
+   tall vertical paddings were tuned for desktop and overflowed on phones.
+   --------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .text-6xl { font-size: 2.75rem; line-height: 1.1; }
+  .text-5xl { font-size: 2.35rem; line-height: 1.15; }
+  .text-4xl { font-size: 2rem; }
+  .text-3xl { font-size: 1.65rem; }
+  .cta-band h2 { font-size: 1.9rem; }
+
+  .hero { padding: 4.5rem 0; min-height: 440px; }
+
+  /* dial back the biggest section paddings */
+  .py-32 { padding: 4.5rem 0; }
+  .py-24 { padding: 3.75rem 0; }
+  .py-20 { padding: 3rem 0; }
+  .py-16 { padding: 2.75rem 0; }
+}
+
+@media (max-width: 480px) {
+  .text-6xl { font-size: 2.2rem; }
+  .text-5xl { font-size: 1.95rem; }
+  .text-4xl { font-size: 1.75rem; }
+
+  .hero { padding: 3.5rem 0; min-height: 380px; }
+
+  /* tighter side gutters on small phones */
+  .px-8 { padding: 0 1.25rem; }
+  .px-6 { padding: 0 1.25rem; }
 }
 
 /* ---------------------------------------------------------------------------
