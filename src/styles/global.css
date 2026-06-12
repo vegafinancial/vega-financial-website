@@ -1663,7 +1663,7 @@ textarea:focus {
 .form-field input::placeholder,
 .form-field textarea::placeholder,
 .form-field select.is-placeholder {
-  color: #9aa0ab;
+  color: #667085; /* WCAG AA: 4.97:1 on white (was #9aa0ab, 2.63:1) */
   font-weight: 400;
 }
 

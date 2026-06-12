@@ -61,19 +61,19 @@ const clock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
       <!-- Send a Message -->
       <div class="contact-form-card">
         <h2>Send a Message</h2>
-        <div id="formBanner" class="form-banner" hidden></div>
+        <div id="formBanner" class="form-banner" role="status" aria-live="polite" hidden></div>
         <form id="contactForm" action="/api/contact" method="POST">
           <div class="form-row">
             <div class="form-field">
-              <input type="text" name="name" placeholder="Full Name *" aria-label="Full Name" required />
+              <input type="text" name="name" placeholder="Full Name *" aria-label="Full Name" autocomplete="name" required />
             </div>
             <div class="form-field">
-              <input type="email" name="email" placeholder="Email Address *" aria-label="Email Address" required />
+              <input type="email" name="email" placeholder="Email Address *" aria-label="Email Address" autocomplete="email" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-field">
-              <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number" />
+              <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number" autocomplete="tel" />
             </div>
             <div class="form-field">
               <select id="subject" name="subject" class="is-placeholder" aria-label="Subject" required onchange="this.classList.toggle('is-placeholder', !this.value)">
