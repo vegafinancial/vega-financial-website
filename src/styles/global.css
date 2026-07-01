@@ -889,6 +889,7 @@ a:hover {
   .text-4xl { font-size: 2rem; }
   .text-3xl { font-size: 1.65rem; }
   .cta-band h2 { font-size: 1.9rem; }
+  .page-hero h1 { font-size: 2rem; }
 
   .hero { padding: 4.5rem 0; min-height: 440px; }
 
@@ -903,6 +904,7 @@ a:hover {
   .text-6xl { font-size: 2.2rem; }
   .text-5xl { font-size: 1.95rem; }
   .text-4xl { font-size: 1.75rem; }
+  .page-hero h1 { font-size: 1.7rem; }
 
   .hero { padding: 3.5rem 0; min-height: 380px; }
 
@@ -1026,6 +1028,7 @@ textarea:focus {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  overflow-wrap: break-word;   /* prevent long single words (e.g. "Comprehensive") overflowing on phones */
 }
 
 .page-hero .subtitle {
@@ -1209,6 +1212,9 @@ textarea:focus {
 
 .leadership-photo {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;               /* let the mobile 1fr grid track shrink below the image's intrinsic width */
+  height: auto;
   border-radius: 1.1rem;
   display: block;
   box-shadow: 0 16px 36px -16px rgba(38, 34, 97, 0.35);
@@ -1230,7 +1236,7 @@ textarea:focus {
 
 .award-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* minmax(0,…) lets columns shrink below content on phones */
   gap: 1rem;
   margin-top: 1.75rem;
 }
@@ -1247,6 +1253,7 @@ textarea:focus {
 .award-card img {
   height: 56px;
   width: auto;
+  max-width: 100%;
   margin: 0 auto 0.75rem;
   display: block;
   object-fit: contain;
