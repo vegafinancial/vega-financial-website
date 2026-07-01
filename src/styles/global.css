@@ -1652,7 +1652,7 @@ textarea:focus {
 }
 
 .fee-disclaimer {
-  color: #9aa0ab;
+  color: #5b636e;
   font-size: 0.85rem;
   line-height: 1.5;
   margin-top: 1.25rem;
@@ -1816,7 +1816,7 @@ textarea:focus {
 .form-field input::placeholder,
 .form-field textarea::placeholder,
 .form-field select.is-placeholder {
-  color: #667085; /* WCAG AA: 4.97:1 on white (was #9aa0ab, 2.63:1) */
+  color: #667085; /* WCAG AA: 4.97:1 on white (was #5b636e, 2.63:1) */
   font-weight: 400;
 }
 
@@ -1855,7 +1855,7 @@ textarea:focus {
 
 .form-note {
   text-align: center;
-  color: #9aa0ab;
+  color: #5b636e;
   font-size: 0.88rem;
   margin-top: 1rem;
 }
@@ -1968,7 +1968,7 @@ textarea:focus {
 .btn-schedule { font-weight: 500; }
 
 .schedule-note {
-  color: #8a93a3;
+  color: #5b636e;
   font-size: 0.85rem;
   margin-top: 1.25rem;
 }
@@ -2008,7 +2008,7 @@ textarea:focus {
   flex-shrink: 0;
   width: 1.1rem;
   height: 1.1rem;
-  color: #9aa0ab;
+  color: #5b636e;
   transition: transform 0.2s ease;
 }
 
