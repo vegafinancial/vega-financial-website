@@ -1520,11 +1520,16 @@ textarea:focus {
 }
 
 .eng-label {
-  color: var(--blue);
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--blue);          /* sky-blue badge */
+  color: var(--navy);               /* navy text — 10:1 contrast, AA pass */
   font-size: 0.76rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  padding: 0.34rem 0.78rem;
+  border-radius: 999px;
   margin-bottom: 1.25rem;
 }
 
