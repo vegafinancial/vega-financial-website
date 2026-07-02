@@ -70,7 +70,7 @@ const currentYear = new Date().getFullYear();
   <div class="footer-disclosures">
     <h3>Disclosures</h3>
     <p>
-      Check the background of your financial professional on FINRA's BrokerCheck.
+      Check the background of your financial professional on FINRA's <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener noreferrer">BrokerCheck</a>.
       Vega Financial LLC ("VF") is a registered investment advisor offering advisory
       services in the state of WA and in other jurisdictions where exempted.
       Registration does not imply a certain level of skill or training. The
@@ -103,6 +103,7 @@ const currentYear = new Date().getFullYear();
 
   <div class="footer-bottom">
     <p>&copy; {currentYear} vega-financial.com. All rights reserved</p>
+    <p class="footer-legal-links"><a href="/accessibility/">Accessibility</a></p>
   </div>
 
   <!-- Redirect disclaimer modal (Schwab / Orion) -->
@@ -122,6 +123,17 @@ const currentYear = new Date().getFullYear();
 </footer>
 
 <style>
+  .footer-legal-links {
+    margin-top: 0.5rem;
+  }
+  .footer-legal-links a {
+    color: var(--gray-muted, #adb5bd);
+    text-decoration: underline;
+  }
+  .footer-legal-links a:hover {
+    color: #fff;
+  }
+
   .redirect-modal {
     position: fixed;
     inset: 0;

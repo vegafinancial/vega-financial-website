@@ -826,6 +826,15 @@ a:hover {
   margin-bottom: 1.25rem;
 }
 
+.footer-disclosures a {
+  color: var(--gray-muted);
+  text-decoration: underline;
+}
+
+.footer-disclosures a:hover {
+  color: var(--white);
+}
+
 .footer-bottom {
   max-width: 72rem;
   margin: 2rem auto 0;
