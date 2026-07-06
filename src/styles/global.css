@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* Inter font is loaded via <link> tags in Layout.astro <head> (parallel fetch,
+   faster than an @import chain). */
 
 /* Vega Financial design system — palette from Figma style guide (docs/styles.png) */
 :root {
