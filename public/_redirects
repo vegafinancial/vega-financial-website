@@ -1,5 +1,15 @@
-/index.html / 301
-/old-about/ /about/ 301
-/old-services/ /services/ 301
-/old-contact/ /contact/ 301
-/legacy/* / 301
+# Approved Phase 0 redirect map (02_Phase0_301_Redirect_Map_FINAL.md)
+# Old WordPress URLs -> new site structure
+/about-us/ /about/ 301
+/about-us /about/ 301
+/onboarding/ /engagement/ 301
+/onboarding /engagement/ 301
+/contact-us-2/ /contact/ 301
+/contact-us-2 /contact/ 301
+
+# Retired pages (Phase 0 map called for 410; Pages _redirects only supports 3xx,
+# so these intentionally have NO rule and fall through to the 404 page.
+# SEO effect is equivalent. Deviation noted Jul 8, 2026.)
+# /calculators/  -> 404
+# /insights/     -> 404
+# old blog posts -> 404
