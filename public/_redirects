@@ -7,6 +7,9 @@
 /contact-us-2/ /contact/ 301
 /contact-us-2 /contact/ 301
 
+# Convenience: standard sitemap path -> Astro's generated index
+/sitemap.xml /sitemap-index.xml 301
+
 # Retired pages (Phase 0 map called for 410; Pages _redirects only supports 3xx,
 # so these intentionally have NO rule and fall through to the 404 page.
 # SEO effect is equivalent. Deviation noted Jul 8, 2026.)
