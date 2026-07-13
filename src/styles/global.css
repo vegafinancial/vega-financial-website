@@ -830,6 +830,7 @@ a:hover {
 .footer-disclosures a {
   color: var(--gray-muted);
   text-decoration: underline;
+  font-size: inherit; /* match the surrounding disclosure text (was inheriting 0.95rem from .site-footer a) */
 }
 
 .footer-disclosures a:hover {
