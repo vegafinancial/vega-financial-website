@@ -3,17 +3,12 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Accessibility" description="Vega Financial is committed to making our website accessible to everyone, including people who use assistive technologies.">
-  <!-- Hero -->
-  <section class="page-hero">
-    <div class="max-w-6xl mx-auto px-4">
-      <h1>Accessibility</h1>
-      <p class="subtitle">We want everyone to be able to use our website, including people who rely on assistive technologies such as screen readers, keyboard navigation, and screen magnification.</p>
-    </div>
-  </section>
-
-  <!-- Statement -->
-  <section class="py-24 bg-white">
+  <!-- Document -->
+  <section class="py-20 bg-white">
     <div class="legal-content">
+      <h1 class="legal-title">Accessibility</h1>
+      <p class="legal-lead">We want everyone to be able to use our website, including people who rely on assistive technologies such as screen readers, keyboard navigation, and screen magnification.</p>
+
       <h2>Our commitment</h2>
       <p>Vega Financial is committed to providing a website that is accessible to the widest possible audience, regardless of ability or technology. We treat accessibility as an ongoing part of how we design, build, and maintain this site.</p>
 
@@ -52,6 +47,20 @@ import Layout from '../layouts/Layout.astro';
     padding: 0 1.5rem;
     color: #3d4350;
     line-height: 1.7;
+  }
+  .legal-title {
+    color: var(--navy);
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0 0 1.75rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid #e4e7ee;
+  }
+  .legal-lead {
+    font-size: 1.05rem;
+    color: #5b636e;
+    margin-bottom: 1.75rem;
   }
   .legal-content h2 {
     color: var(--navy);
