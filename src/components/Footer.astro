@@ -70,10 +70,13 @@ const currentYear = new Date().getFullYear();
   <div class="footer-disclosures">
     <h3>Disclosures</h3>
     <p>
-      Check the background of your financial professional on FINRA's <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener noreferrer">BrokerCheck</a>.
-      Vega Financial LLC ("VF") is a registered investment advisor offering advisory
+      Check the background of your investment adviser on FINRA's BrokerCheck at <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener noreferrer">brokercheck</a>.
+      Vega Financial LLC ("VF") is a registered investment adviser offering advisory
       services in the state of WA and in other jurisdictions where exempted.
-      Registration does not imply a certain level of skill or training. The
+      Registration does not imply a certain level of skill or training. A copy of VF's
+      current Form ADV Part 2A brochure and Part 2B brochure supplements is available
+      free of charge upon request by contacting us at
+      <a href="mailto:info@vega-financial.com">info@vega-financial.com</a>. The
       information on this site is not intended as tax, accounting or legal advice, as
       an offer or solicitation of an offer to buy or sell, or as an endorsement of
       any company, security, fund, or other securities or non-securities offering.
@@ -103,6 +106,7 @@ const currentYear = new Date().getFullYear();
 
   <div class="footer-bottom">
     <p>&copy; {currentYear} vega-financial.com. All rights reserved</p>
+    <p class="footer-legal-links"><a href="/privacy/">Privacy Policy</a> &middot; <a href="/accessibility/">Accessibility</a></p>
   </div>
 
   <!-- Redirect disclaimer modal (Schwab / Orion) -->
@@ -122,6 +126,17 @@ const currentYear = new Date().getFullYear();
 </footer>
 
 <style>
+  .footer-legal-links {
+    margin-top: 0.5rem;
+  }
+  .footer-legal-links a {
+    color: var(--gray-muted, #adb5bd);
+    text-decoration: underline;
+  }
+  .footer-legal-links a:hover {
+    color: #fff;
+  }
+
   .redirect-modal {
     position: fixed;
     inset: 0;

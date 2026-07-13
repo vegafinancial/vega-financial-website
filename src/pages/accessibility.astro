@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Accessibility" description="Vega Financial is committed to making our website accessible to everyone, including people who use assistive technologies.">
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1>Accessibility</h1>
+      <p class="subtitle">We want everyone to be able to use our website, including people who rely on assistive technologies such as screen readers, keyboard navigation, and screen magnification.</p>
+    </div>
+  </section>
+
+  <!-- Statement -->
+  <section class="py-24 bg-white">
+    <div class="legal-content">
+      <h2>Our commitment</h2>
+      <p>Vega Financial is committed to providing a website that is accessible to the widest possible audience, regardless of ability or technology. We treat accessibility as an ongoing part of how we design, build, and maintain this site.</p>
+
+      <h2>Conformance status</h2>
+      <p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA, the standard widely referenced by accessibility regulations around the world. As of July 2026, our site has been evaluated against this standard using a combination of automated testing and manual testing (including keyboard-only navigation and screen-reader review), and we believe it substantially meets Level AA.</p>
+      <p>Because accessibility is an ongoing process, there may still be areas of the site that can be improved. We are committed to addressing any issues that are identified.</p>
+
+      <h2>What we&rsquo;ve done</h2>
+      <p>We have implemented, among other things:</p>
+      <ul>
+        <li>Clear, readable color contrast across text and essential interface elements</li>
+        <li>Visible labels on all contact-form fields, with support for browser autofill where available</li>
+        <li>Full keyboard operability with a visible focus indicator and no keyboard traps</li>
+        <li>Descriptive text alternatives for meaningful images</li>
+        <li>Logical headings and landmark regions for easier navigation with assistive technologies</li>
+        <li>A responsive layout that reflows without loss of content on small screens and at up to 200% zoom</li>
+      </ul>
+
+      <h2>Third-party content and tools</h2>
+      <p>Some features link to services operated by other companies, including Charles Schwab and Orion client portals, our online scheduling tool, and the spam-protection challenge on our contact form. These are provided by third parties, and their accessibility is the responsibility of the respective provider. However, we welcome feedback about any barriers you encounter when using these services from our site.</p>
+
+      <h2>Feedback and contact</h2>
+      <p>We welcome your feedback. If you encounter any difficulty using our website, or need information in an alternative format, please contact us.</p>
+      <p>Email: <a href="mailto:info@vega-financial.com">info@vega-financial.com</a></p>
+      <p>We aim to respond within a few business days.</p>
+
+      <p class="legal-updated">Last reviewed: July 1, 2026</p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .legal-content {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    color: #3d4350;
+    line-height: 1.7;
+  }
+  .legal-content h2 {
+    color: var(--navy);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 2.25rem 0 0.75rem;
+  }
+  .legal-content h2:first-child { margin-top: 0; }
+  .legal-content p { margin: 0 0 1rem; }
+  .legal-content ul {
+    margin: 0 0 1.25rem;
+    padding-left: 1.4rem;
+    list-style: disc;
+  }
+  .legal-content li { margin-bottom: 0.5rem; }
+  .legal-content a {
+    color: var(--navy-light);
+    text-decoration: underline;
+  }
+  .legal-content a:hover { color: var(--navy); }
+  .legal-updated {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #5b636e;
+    font-style: italic;
+  }
+</style>
