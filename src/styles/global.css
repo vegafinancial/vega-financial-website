@@ -1,5 +1,37 @@
-/* Inter font is loaded via <link> tags in Layout.astro <head> (parallel fetch,
-   faster than an @import chain). */
+/* Inter — self-hosted (public/fonts/), subset to Latin, weights 400/500/600/700.
+   400 + 700 are preloaded in Layout.astro (nav + hero headline) so they arrive
+   before first paint -> no font-swap layout shift (CLS). SIL OFL: public/fonts/OFL.txt */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inter-latin-500-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inter-latin-600-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/inter-latin-700-normal.woff2') format('woff2');
+}
 
 /* Vega Financial design system — palette from Figma style guide (docs/styles.png) */
 :root {
